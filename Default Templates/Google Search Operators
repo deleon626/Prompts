@@ -1,0 +1,54 @@
+# Google Search Operators
+
+
+| **Operator**         | **Purpose**                                                                                                 | **Example**                                               |
+|----------------------|---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| **"" (Quotes)**     | Search for an exact phrase.                                                                              | "bissell crosswave 1785"                                  |
+| **AND**             | Search for results containing all terms listed.                                                         | seo AND content                                           |
+| **- (Hyphen)**      | Exclude specific words from the search results.                                                         | SEO California -Los -Angeles                              |
+| **\* (Wildcard)**   | Fill in the blank for missing words.                                                                    | Mackenzie Scott * Donation                                |
+| **() (Parentheses)**| Group terms or operators for structured searches.                                                       | allinurl: SEO (Los Angeles OR San Diego)                 |
+| **OR**              | Search for results matching any listed terms.                                                          | workout yoga OR pilates                                   |
+| **$ / €**           | Search for products by price.                                                                           | cordless drill 200$                                       |
+| **site:**           | Limit search to a specific website.                                                                     | site:thepointsguy.com                                     |
+| **intext:**         | Find results where the term is in the body of the page.                                                | intext:airpods                                            |
+| **allintext:**      | Find results where all words in the query appear in the body of the page.                              | allintext:airpods 3rd generation                          |
+| **intitle:**        | Find results where the term is in the page title.                                                      | intitle:samsung                                           |
+| **allintitle:**     | Find results where all terms in the query are in the title.                                            | allintitle:tahoe vacation rentals pet friendly            |
+| **inurl:**          | Find results with a specific term in the URL.                                                         | inurl:airpods pro                                         |
+| **allinurl:**       | Find results where all terms in the query appear in the URL.                                           | allinurl:jomalone fragrance                               |
+| **filetype:**       | Find specific file types like PDF or DOC.                                                              | seo filetype:pdf                                          |
+| **related:**        | Find websites similar to a specified URL.                                                              | related:vrbo.com                                          |
+| **AROUND(x)**       | Find results where terms are within x words of each other.                                             | t-rex AROUND(4) snarl                                     |
+| **define:**         | Get the definition of a term.                                                                          | define:serendipity                                        |
+| **cache:**          | See Google’s cached version of a page.                                                               | cache:example.com                                         |
+| **weather:**        | Get weather information for a specific location.                                                      | weather:New York                                          |
+| **stock:**          | Get stock information for a specific company.                                                         | stock:AAPL                                                |
+| **map:**            | Display a map for a specified location.                                                               | map:San Francisco                                         |
+| **movie:**          | Find movie details and showtimes.                                                                     | movie:Dungeons and Dragons                                |
+| **inanchor:**       | Find results where the anchor text contains specified terms.                                          | inanchor:marketing                                        |
+| **allinanchor:**    | Find results where all terms appear in the anchor text.                                               | allinanchor:SEO marketing                                 |
+
+---
+
+### Complex Examples:
+| **Query**                                                                                          | **Purpose**                                                                                                            |
+|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| site:example.com "digital marketing" -intitle:blog                                                | Find all pages about "digital marketing" on example.com, excluding blog pages.                                       |
+| "best practices" filetype:pdf AND site:.edu                                                      | Search for PDFs containing "best practices" on educational websites.                                                |
+| (intitle:review OR intitle:testimonial) "wireless headphones"                                     | Find pages with reviews or testimonials about wireless headphones.                                                   |
+| site:github.com inurl:repository AROUND(3) "machine learning"                                     | Locate GitHub repositories related to machine learning with a specific word proximity.                                |
+| intitle:roadmap site:companydomain.com filetype:ppt                                               | Search for PowerPoint files containing "roadmap" in the title on a company's website.                                |
+| "climate change" site:gov OR site:edu -filetype:html                                             | Locate non-HTML documents about climate change on government or educational websites.                                 |
+| site:nytimes.com (intitle:technology OR intitle:innovation) AND intext:"artificial intelligence" | Search the New York Times for articles about technology or innovation containing "artificial intelligence."         |
+| inurl:blog AND ("top 10" OR "ultimate guide") -site:pinterest.com                                | Find blog posts with "top 10" or "ultimate guide" in the URL, excluding results from Pinterest.                      |
+| "cybersecurity risks" AROUND(5) "data breaches" -filetype:pdf                                    | Identify articles discussing cybersecurity risks near mentions of data breaches, excluding PDFs.                      |
+| (intitle:conference OR inurl:events) "2024" site:example.org                                     | Discover upcoming 2024 conferences or events listed on example.org.                                                  |
+
+### Notes:
+1. Combine multiple operators for fine-grained results.
+2. Adjust proximity with AROUND(x) for more or less specific matches.
+3. Always test complex queries to ensure optimal results.
+
+---
+

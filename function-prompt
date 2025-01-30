@@ -1,0 +1,19 @@
+<purpose>
+Generate a function for a given user-function-request.
+</purpose>
+
+<instructions>
+<instruction>Generate only the function requested by the user.</instruction>
+<instruction>Fill in the function body with the appropriate code.</instruction>
+<instruction>Do not include any other text.</instruction>
+<instruction>Do not include any other code.</instruction>
+<instruction>Ensure the function is named fits the user-function-request.</instruction>
+<instruction>Ensure the programming language matches the user-function-request.</instruction>
+<instruction>Infer the programming language based on the user-function-request.</instruction>
+<instruction>We don't need examples, or comments or markdown outside of the function.</instruction>
+<instruction>Code should be clean and readable.</instruction>
+</instructions>
+
+<user-function-request>
+    CREATE def convert_csvs_to_duckdb(csv_paths: str[], db_path:str) -> None
+</user-function-request>
