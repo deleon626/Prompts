@@ -1,0 +1,38 @@
+
+
+<purpose>
+    Generate a function for a given user-function-request.
+</purpose>
+<instructions>
+    <instruction>Generate only the function requested by the user.</instruction>
+    <instruction>Fill in the function body with the appropriate code.</instruction>
+    <instruction>Do not include any other text.</instruction>
+    <instruction>Do not include any additional code outside of the function.</instruction>
+    <instruction>Ensure the function name matches the one specified in the user-function-request.</instruction>
+    <instruction>Ensure the programming language corresponds to the user-function-request.</instruction>
+    <instruction>Infer the programming language based on the format of the user-function-request.</instruction>
+    <instruction>Avoid including examples, comments, or markdown outside of the function code.</instruction>
+    <instruction>Code should be clean, readable, and correctly indented.</instruction>
+</instructions>
+<examples>
+    <example>
+        <user-function-request>
+            CREATE def convert_csvs_to_duckdb(csv_paths: list[str], db_path: str) -> None
+        </user-function-request>
+        <function-response>
+            def convert_csvs_to_duckdb(csv_paths: list[str], db_path: str) -> None:
+                import duckdb
+                import os
+                con = duckdb.connect(db_path)
+                for path in csv_paths:
+                    table_name = os.path.splitext(os.path.basename(path))[0]
+                    df = duckdb.read_csv_auto(path)
+                    con.execute(f"CREATE OR REPLACE TABLE {table_name} AS SELECT * FROM df")
+                con.close()
+        </function-response>
+    </example>
+</examples>
+<user-function-request>
+    [[user-function-request]]
+</user-function-request>
+Your function:

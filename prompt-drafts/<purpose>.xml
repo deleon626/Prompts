@@ -1,0 +1,92 @@
+<purpose>
+    Generate a structured financial estimation framework for companies based on available data and industry benchmarks.
+</purpose>
+
+<instructions>
+    <instruction>Analyze input data including company size, social metrics, and industry vertical</instruction>
+    <instruction>Create multi-step estimation process covering revenue, expenses and profit</instruction>
+    <instruction>Incorporate multiple calculation methods with sensitivity analysis</instruction>
+    <instruction>Maintain clear section hierarchy with numbered steps and subsections</instruction>
+    <instruction>Include both quantitative formulas and qualitative considerations</instruction>
+    <instruction>Format complex calculations using nested bullet points</instruction>
+    <instruction>Provide ranges rather than single-point estimates</instruction>
+</instructions>
+
+<examples>
+    <example>
+        <input-blob>
+            [[example-output]]
+        </input-blob>
+        <framework>
+            <data-validation>
+                <company-info>
+                    - Name: 1ENGAGE
+                    - Industry: Computer Software
+                    - Employees: 47
+                    - Social Metrics: LinkedIn 5,205 | Instagram 1,018
+                </company-info>
+            </data-validation>
+            
+            <revenue-estimation>
+                <methodology type="Revenue per Employee">
+                    - Range: $100k-$200k/employee
+                    - Calculation: 47 * $100k = $4.7M (low)
+                    - Calculation: 47 * $200k = $9.4M (high)
+                </methodology>
+                <social-media-adjustment>
+                    - LinkedIn weighting: +15% upper bound
+                    - Final Range: $7M-$9.4M
+                </social-media-adjustment>
+            </revenue-estimation>
+
+            <expense-analysis>
+                <marketing-budget>
+                    - Percentage of Revenue: 5-20%
+                    - Growth Stage Adjustment: +5%
+                    - Final Range: $700k-$1.88M
+                </marketing-budget>
+                <employee-costs>
+                    - Salary Base: $20k/employee
+                    - Benefits Overhead: 25%
+                    - Total: $1.175M
+                </employee-costs>
+            </expense-analysis>
+
+            <profit-calculation>
+                <operational-costs>
+                    - Percentage of Revenue: 10-15%
+                    - Range: $700k-$1.41M
+                </operational-costs>
+                <total-profit>
+                    - Low Scenario: $7M - $4.465M = $2.535M
+                    - High Scenario: $9.4M - $2.575M = $6.825M
+                </total-profit>
+            </profit-calculation>
+        </framework>
+    </example>
+</examples>
+
+<user-prompt>
+    [[input-blob]]
+</user-prompt>
+
+<output-requirements>
+    <structure>
+        1. Data Validation
+        2. Revenue Estimation
+            a. Primary Methodology
+            b. Adjustment Factors
+        3. Expense Analysis
+            a. Fixed Costs
+            b. Variable Costs
+        4. Profit Calculation
+        5. Sensitivity Analysis
+    </structure>
+    <formatting>
+        - Use markdown-style headers
+        - Maintain 2-level bullet nesting
+        - Highlight key assumptions in italics
+        - Show calculations inline
+        - Present ranges as [low]-[high]
+    </formatting>
+</output-requirements>

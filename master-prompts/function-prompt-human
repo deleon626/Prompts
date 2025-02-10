@@ -1,0 +1,25 @@
+<purpose>
+Transform human instructions into a precise <user-function-request> code block that defines a function according to the provided specifications.
+</purpose>
+
+<instructions>
+<instruction>Analyze the human instructions provided in the <human-instructions> block to determine the intended functionality, programming language, and function signature.</instruction>
+<instruction>Identify the appropriate function name, parameters, and return type from the human instructions.</instruction>
+<instruction>Create a function definition that strictly adheres to the human instructions using the correct syntax for the target programming language.</instruction>
+<instruction>Output only the <user-function-request> code block with the generated function, without any additional text or code.</instruction>
+<instruction>Ensure the code is clean, properly formatted, and follows the conventions of the inferred programming language.</instruction>
+</instructions>
+
+<input-example>
+    Human Instructions: "I need a Python function named 'subtract' that takes two integers and returns their difference."
+</input-example>
+
+<output-example>
+    <user-function-request>
+        CREATE def subtract(a: int, b: int) -> int
+    </user-function-request>
+</output-example>
+
+<human-instructions>
+    [Insert human instructions here]
+</human-instructions>
